@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        :root {
+            --primary: #6366f1; --primary-light: #818cf8; --secondary: #ec4899;
+            --bg-dark: #0f172a; --glass-bg: rgba(30, 41, 59, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.1); --text-main: #f8fafc;
+            --text-muted: #94a3b8; --success: #10b981; --warning: #fcd34d;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; }
+        body {
+            background-color: var(--bg-dark); color: var(--text-main);
+            min-height: 100vh; display: flex; flex-direction: column;
+            align-items: center; padding: 2rem; position: relative; overflow-x: hidden;
+        }
+        .bg-mesh {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1;
+            background: radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 85% 30%, rgba(236, 72, 153, 0.15) 0%, transparent 50%);
+            filter: blur(60px); animation: breathe 10s ease-in-out infinite alternate;
+        }
+        @keyframes breathe { 0% { transform: scale(1); opacity: 0.8; } 100% { transform: scale(1.1); opacity: 1; } }
+        
+        .dashboard-container {
+            width: 100%; max-width: 900px; animation: slideUp 0.6s ease forwards;
+        }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+        .header h1 { font-size: 1.8rem; font-weight: 700; display: flex; align-items: center; gap: 0.6rem; }
+        
+        .btn-home {
+            display: inline-flex; align-items: center; gap: 0.4rem; text-decoration: none;
+            padding: 0.6rem 1rem; border-radius: 12px;
+            background: rgba(255, 255, 255, 0.05); color: var(--text-main);
+            border: 1px solid var(--glass-border); font-weight: 600; font-size: 0.85rem; transition: all 0.3s;
+        }
+        .btn-home:hover { background: rgba(255, 255, 255, 0.1); transform: translateY(-2px); }
+
+        .grid-top { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-bottom: 1.2rem; }
+        @media (max-width: 640px) { .grid-top { grid-template-columns: 1fr; } }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.03); border: 1px solid var(--glass-border);
+            border-radius: 16px; padding: 1.5rem; position: relative; overflow: hidden;
+            display: flex; flex-direction: column; justify-content: center;
+        }
+        .card-title { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; font-weight: 600; }
+        
+        .pill { 
+            display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.4rem 1rem; 
+            border-radius: 50px; font-weight: 700; font-size: 1rem; width: fit-content; text-transform: capitalize;
+        }
+        .pill-emotion { background: rgba(99, 102, 241, 0.2); color: #c7d2fe; border: 1px solid rgba(99, 102, 241, 0.3); }
+        .pill-topic { background: rgba(236, 72, 153, 0.2); color: #fbcfe8; border: 1px solid rgba(236, 72, 153, 0.3); font-size: 0.95rem; }
+        
+        .conf-value { color: var(--success); font-weight: 800; font-size: 1.3rem; padding: 0.3rem 0.6rem; background: rgba(16, 185, 129, 0.15); border-radius: 10px; display: inline-block; margin-bottom: 0.8rem; }
+        .conf-bar-bg { height: 6px; background: rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden; }
+        .conf-bar-fill { height: 100%; background: var(--success); border-radius: 10px; width: 0; transition: width 1.5s cubic-bezier(0.16,1,0.3,1); }
+        
+        .quality-card {
+            background: rgba(255, 255, 255, 0.03); border: 1px solid var(--glass-border);
+            border-radius: 16px; padding: 1.5rem; width: 100%; max-width: 320px; margin-bottom: 1.2rem;
+        }
+        .quality-score { font-size: 1.6rem; font-weight: 800; color: var(--warning); margin-bottom: 0.6rem; display: inline-block; padding: 0.3rem 0.8rem; background: rgba(245, 158, 11, 0.1); border-radius: 10px; }
+        .quality-bar-fill { height: 100%; background: var(--warning); border-radius: 10px; width: 0; transition: width 1.5s cubic-bezier(0.16,1,0.3,1); }
+
+        .grid-bottom { display: grid; grid-template-columns: 1.2fr 1.5fr; gap: 1.2rem; margin-bottom: 1.2rem; }
+        @media (max-width: 768px) { .grid-bottom { grid-template-columns: 1fr; } }
+        
+        .chart-wrapper { display: flex; align-items: center; justify-content: center; margin-top: 1rem; gap: 2rem; flex-wrap: wrap; }
+        .donut { 
+            width: 150px; height: 150px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; position: relative;
+        }
+        .donut-inner { width: 110px; height: 110px; background: rgba(15, 23, 42, 0.95); border-radius: 50%; }
+        .donut-legend { display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.8rem; font-weight: 500; }
+        .legend-item { display: flex; align-items: center; gap: 0.5rem; }
+        .legend-dot { width: 14px; height: 14px; border-radius: 3px; }
+
+        .breakdown-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-top: 1rem; }
+        .breakdown-item { background: rgba(0, 0, 0, 0.25); border-radius: 12px; padding: 1.2rem; text-align: center; border: 1px solid rgba(255,255,255,0.03); }
+        .bd-label { font-size: 0.7rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 0.4rem; font-weight: 600; }
+        .bd-value { font-size: 1.4rem; font-weight: 700; color: white; }
+
+        .feedback-card {
+            background: rgba(255, 255, 255, 0.03); border: 1px solid var(--glass-border);
+            border-radius: 16px; padding: 1.8rem; position: relative; border-left: 4px solid var(--primary);
+        }
+        .feedback-title { font-size: 1.1rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; color: white; }
+        .feedback-content { color: #cbd5e1; line-height: 1.7; font-size: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="bg-mesh"></div>
+    <div class="dashboard-container">
+        
+        <div class="header">
+            <h1><i class="ph-bold ph-crosshair"></i> Analysis Dashboard</h1>
+            <a href="/" class="btn-home"><i class="ph-bold ph-arrow-left"></i> Home</a>
+        </div>
+
+        <div class="grid-top">
+            <div class="card">
+                <div class="card-title">PRIMARY EMOTION</div>
+                <div class="pill pill-emotion">{{ emotion }}</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title"><i class="ph-bold ph-target"></i> AI CONFIDENCE</div>
+                <div>
+                    <div class="conf-value">{{ (confidence * 100)|int }}%</div>
+                    <div class="conf-bar-bg">
+                        <div class="conf-bar-fill" data-width="{{ (confidence * 100)|int }}%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title"><i class="ph-bold ph-magnifying-glass"></i> DETECTED TOPIC</div>
+                <div class="pill pill-topic"><i class="ph-bold ph-book-open"></i> {{ topic_info.primary_topic }}</div>
+            </div>
+        </div>
+
+        <div class="quality-card">
+            <div class="card-title"><i class="ph-bold ph-medal"></i> OVERALL QUALITY</div>
+            <div class="quality-score">{{ quality_metrics.overall_score|int }}/100</div>
+            <div class="conf-bar-bg">
+                <div class="quality-bar-fill" data-width="{{ quality_metrics.overall_score|int }}%"></div>
+            </div>
+        </div>
+
+        <div class="grid-bottom">
+            <div class="card">
+                <div class="card-title"><i class="ph-bold ph-chart-pie-slice"></i> Emotion Spectrum</div>
+                <div class="chart-wrapper">
+                    {% set gradient_parts = [] %}
+                    {% set current_pct = namespace(value=0) %}
+                    {% set colors = ['#8b5cf6', '#ec4899', '#3b82f6', '#10b981', '#f59e0b', '#ef4444'] %}
+                    
+                    {% for e in all_emotions %}
+                        {% set start = current_pct.value %}
+                        {% set current_pct.value = current_pct.value + e.score %}
+                        {% set part = colors[loop.index0 % 6] ~ " " ~ start ~ "% " ~ current_pct.value ~ "%" %}
+                        {% set _ = gradient_parts.append(part) %}
+                    {% endfor %}
+                    
+                    <div class="donut" data-conic="conic-gradient({{ gradient_parts | join(', ') }})">
+                        <div class="donut-inner"></div>
+                    </div>
+                    
+                    <div class="donut-legend">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem 1.5rem;">
+                            {% for e in all_emotions %}
+                            <div class="legend-item">
+                                <div class="legend-dot" data-bg="{{ colors[loop.index0 % 6] }}"></div>
+                                <span style="text-transform: capitalize;">{{ e.label }}</span>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><i class="ph-bold ph-sliders-horizontal"></i> Structure Breakdown</div>
+                <div class="breakdown-grid">
+                    <div class="breakdown-item">
+                        <div class="bd-label">Length</div>
+                        <div class="bd-value">{{ quality_metrics.length_score|int }}</div>
+                    </div>
+                    <div class="breakdown-item">
+                        <div class="bd-label">Complexity</div>
+                        <div class="bd-value">{{ quality_metrics.complexity_score|int }}</div>
+                    </div>
+                    <div class="breakdown-item">
+                        <div class="bd-label">Vocabulary</div>
+                        <div class="bd-value">{{ quality_metrics.vocabulary_score|int }}</div>
+                    </div>
+                    <div class="breakdown-item">
+                        <div class="bd-label">Structure</div>
+                        <div class="bd-value">{{ quality_metrics.structure_score|int }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="feedback-card">
+            <div class="feedback-title"><i class="ph-fill ph-lightbulb" style="color: var(--primary);"></i> AI Feedback & Guidance</div>
+            <div class="feedback-content">{{ feedback }}</div>
+        </div>
+
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                document.querySelectorAll('.conf-bar-fill, .quality-bar-fill').forEach(bar => {
+                    if (bar.dataset.width) {
+                        bar.style.width = bar.dataset.width;
+                    }
+                });
+            }, 300);
+            
+            // Fix linter warnings by applying CSS dynamically
+            const donut = document.querySelector('.donut');
+            if (donut && donut.dataset.conic) {
+                donut.style.background = donut.dataset.conic;
+            }
+            document.querySelectorAll('.legend-dot').forEach(dot => {
+                if(dot.dataset.bg) {
+                    dot.style.background = dot.dataset.bg;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,865 @@
+{
+  "2f53e038-3089-49ad-9a9e-2b12edff8940": {
+    "submissions": [
+      {
+        "answer": "I really enjoyed learning about recursion and I feel confident while solving most problems related to it. The examples explained in class helped me understand the concept clearly, and I am able to apply recursion in coding problems effectively. With more practice, I believe I can master advanced recursive algorithms.",
+        "emotion": "joy",
+        "confidence": 0.99,
+        "quality_metrics": {
+          "length_score": 75,
+          "complexity_score": 90,
+          "vocabulary_score": 96.0,
+          "readability_score": 70,
+          "structure_score": 50,
+          "overall_score": 79.5,
+          "quality_level": "good",
+          "word_count": 50,
+          "sentence_count": 3
+        },
+        "topic": {
+          "primary_topic": "Computer Science",
+          "confidence": 0.333,
+          "all_topics": {
+            "Computer Science": 0.333,
+            "Programming": 0.333,
+            "Psychology": 0.333
+          },
+          "emoji": "\ud83d\udcbb"
+        },
+        "word_count": 50,
+        "timestamp": "2026-02-03T16:40:25.423998",
+        "submission_id": 1
+      }
+    ],
+    "statistics": {
+      "total_submissions": 1,
+      "average_quality": 79.5,
+      "most_common_emotion": "joy",
+      "improvement_trend": []
+    }
+  },
+  "3e58e5fb-315e-4e39-a912-259d78291702": {
+    "submissions": [
+      {
+        "answer": "I really enjoyed learning about recursion and I feel confident while solving most problems related to it. The examples explained in class helped me understand the concept clearly, and I am able to apply recursion in coding problems effectively. With more practice, I believe I can master advanced recursive algorithms.",
+        "emotion": "joy",
+        "confidence": 0.99,
+        "quality_metrics": {
+          "length_score": 75,
+          "complexity_score": 90,
+          "vocabulary_score": 96.0,
+          "readability_score": 70,
+          "structure_score": 50,
+          "overall_score": 79.5,
+          "quality_level": "good",
+          "word_count": 50,
+          "sentence_count": 3
+        },
+        "topic": {
+          "primary_topic": "Computer Science",
+          "confidence": 0.333,
+          "all_topics": {
+            "Computer Science": 0.333,
+            "Programming": 0.333,
+            "Psychology": 0.333
+          },
+          "emoji": "\ud83d\udcbb"
+        },
+        "word_count": 50,
+        "timestamp": "2026-02-03T16:41:03.575165",
+        "submission_id": 1
+      }
+    ],
+    "statistics": {
+      "total_submissions": 1,
+      "average_quality": 79.5,
+      "most_common_emotion": "joy",
+      "improvement_trend": []
+    }
+  },
+  "04124cd9-65fa-469f-a38c-23f452eb6e92": {
+    "submissions": [
+      {
+        "answer": "I am very happy today because I completed my project successfully. \r\nI worked hard for many days and finally achieved my goal.",
+        "emotion": "joy",
+        "confidence": 0.99,
+        "quality_metrics": {
+          "length_score": 50,
+          "complexity_score": 70,
+          "vocabulary_score": 100,
+          "readability_score": 90,
+          "structure_score": 25,
+          "overall_score": 69.75,
+          "quality_level": "average",
+          "word_count": 22,
+          "sentence_count": 2
+        },
+        "topic": {
+          "primary_topic": "General",
+          "confidence": 0.5,
+          "all_topics": {
+            "General": 0.5
+          },
+          "emoji": "\ud83d\udcd6"
+        },
+        "word_count": 22,
+        "timestamp": "2026-02-27T11:00:42.361279",
+        "submission_id": 1
+      },
+      {
+        "answer": "I feel very sad and frustrated because I failed my exam.\r\nNothing is going right and I feel disappointed in myself.",
+        "emotion": "sadness",
+        "confidence": 0.97,
+        "quality_metrics": {
+          "length_score": 50,
+          "complexity_score": 70,
+          "vocabulary_score": 97.14,
+          "readability_score": 90,
+          "structure_score": 25,
+          "overall_score": 69.03,
+          "quality_level": "average",
+          "word_count": 21,
+          "sentence_count": 2
+        },
+        "topic": {
+          "primary_topic": "General",
+          "confidence": 0.5,
+          "all_topics": {
+            "General": 0.5
+          },
+          "emoji": "\ud83d\udcd6"
+        },
+        "word_count": 21,
+        "timestamp": "2026-02-27T11:01:29.760230",
+        "submission_id": 2
+      },
+      {
+        "answer": "Artificial Intelligence is a branch of computer science that focuses on \r\nbuilding systems capable of performing tasks that require human intelligence.",
+        "emotion": "neutral",
+        "confidence": 0.77,
+        "quality_metrics": {
+          "length_score": 50,
+          "complexity_score": 90,
+          "vocabulary_score": 100,
+          "readability_score": 50,
+          "structure_score": 25,
+          "overall_score": 68.75,
+          "quality_level": "average",
+          "word_count": 21,
+          "sentence_count": 1
+        },
+        "topic": {
+          "primary_topic": "Engineering",
+          "confidence": 1.0,
+          "all_topics": {
+            "Engineering": 1.0
+          },
+          "emoji": "\u2699\ufe0f"
+        },
+        "word_count": 21,
+        "timestamp": "2026-02-27T11:01:48.668457",
+        "submission_id": 3
+      },
+      {
+        "answer": "Technology has become an integral part of modern society. \r\nFrom education to healthcare, it plays a vital role in improving efficiency.\r\nHowever, excessive dependence on technology can also create challenges such \r\nas reduced human interaction and privacy concerns.",
+        "emotion": "fear",
+        "confidence": 0.64,
+        "quality_metrics": {
+          "length_score": 50,
+          "complexity_score": 70,
+          "vocabulary_score": 100,
+          "readability_score": 50,
+          "structure_score": 70,
+          "overall_score": 70.5,
+          "quality_level": "average",
+          "word_count": 38,
+          "sentence_count": 3
+        },
+        "topic": {
+          "primary_topic": "Mathematics",
+          "confidence": 1.0,
+          "all_topics": {
+            "Mathematics": 1.0
+          },
+          "emoji": "\ud83d\udd22"
+        },
+        "word_count": 38,
+        "timestamp": "2026-02-27T11:05:00.568424",
+        "submission_id": 4
+      },
+      {
+        "answer": "Online education has changed my life. \r\nAlthough it is sometimes challenging, I feel motivated and confident \r\nabout learning new skills through technology.",
+        "emotion": "joy",
+        "confidence": 0.99,
+        "quality_metrics": {
+          "length_score": 50,
+          "complexity_score": 70,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 50,
+          "overall_score": 70.5,
+          "quality_level": "average",
+          "word_count": 22,
+          "sentence_count": 2
+        },
+        "topic": {
+          "primary_topic": "Psychology",
+          "confidence": 1.0,
+          "all_topics": {
+            "Psychology": 1.0
+          },
+          "emoji": "\ud83e\udde0"
+        },
+        "word_count": 22,
+        "timestamp": "2026-02-27T11:05:25.016219",
+        "submission_id": 5
+      },
+      {
+        "answer": "Online education has changed my life. \r\nAlthough it is sometimes challenging, I feel motivated and confident \r\nabout learning new skills through technology.",
+        "emotion": "joy",
+        "confidence": 0.99,
+        "quality_metrics": {
+          "length_score": 50,
+          "complexity_score": 70,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 50,
+          "overall_score": 70.5,
+          "quality_level": "average",
+          "word_count": 22,
+          "sentence_count": 2
+        },
+        "topic": {
+          "primary_topic": "Psychology",
+          "confidence": 1.0,
+          "all_topics": {
+            "Psychology": 1.0
+          },
+          "emoji": "\ud83e\udde0"
+        },
+        "word_count": 22,
+        "timestamp": "2026-02-27T11:05:30.609356",
+        "submission_id": 6
+      },
+      {
+        "answer": "Online education has changed my life. \r\nAlthough it is sometimes challenging, I feel motivated and confident \r\nabout learning new skills through technology.",
+        "emotion": "joy",
+        "confidence": 0.99,
+        "quality_metrics": {
+          "length_score": 50,
+          "complexity_score": 70,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 50,
+          "overall_score": 70.5,
+          "quality_level": "average",
+          "word_count": 22,
+          "sentence_count": 2
+        },
+        "topic": {
+          "primary_topic": "Psychology",
+          "confidence": 1.0,
+          "all_topics": {
+            "Psychology": 1.0
+          },
+          "emoji": "\ud83e\udde0"
+        },
+        "word_count": 22,
+        "timestamp": "2026-02-27T11:05:36.965180",
+        "submission_id": 7
+      },
+      {
+        "answer": "Technology has become an integral part of modern society. \r\nFrom education to healthcare, it plays a vital role in improving efficiency.\r\nHowever, excessive dependence on technology can also create challenges such \r\nas reduced human interaction and privacy concerns.",
+        "emotion": "fear",
+        "confidence": 0.64,
+        "quality_metrics": {
+          "length_score": 50,
+          "complexity_score": 70,
+          "vocabulary_score": 100,
+          "readability_score": 50,
+          "structure_score": 70,
+          "overall_score": 70.5,
+          "quality_level": "average",
+          "word_count": 38,
+          "sentence_count": 3
+        },
+        "topic": {
+          "primary_topic": "Mathematics",
+          "confidence": 1.0,
+          "all_topics": {
+            "Mathematics": 1.0
+          },
+          "emoji": "\ud83d\udd22"
+        },
+        "word_count": 38,
+        "timestamp": "2026-02-27T11:05:52.247651",
+        "submission_id": 8
+      }
+    ],
+    "statistics": {
+      "total_submissions": 8,
+      "average_quality": 70.0,
+      "most_common_emotion": "joy",
+      "improvement_trend": "declining"
+    }
+  },
+  "73df7912-e847-4682-8075-2fdd3cad315f": {
+    "submissions": [
+      {
+        "answer": "The mitochondria is considered the powerhouse of the cell as it generates most of the chemical energy needed to power the cell's biochemical reactions in the form of adenosine triphosphate (ATP). I find the complexities of cellular respiration absolutely fascinating and sometimes overwhelming.",
+        "emotion": "surprise",
+        "confidence": 0.67,
+        "quality_metrics": {
+          "length_score": 50,
+          "complexity_score": 90,
+          "vocabulary_score": 94.88,
+          "readability_score": 50,
+          "structure_score": 25,
+          "overall_score": 67.47,
+          "quality_level": "average",
+          "word_count": 43,
+          "sentence_count": 2
+        },
+        "topic": {
+          "primary_topic": "Biology",
+          "confidence": 0.5,
+          "all_topics": {
+            "Biology": 0.5,
+            "Physics": 0.25,
+            "Chemistry": 0.25
+          },
+          "emoji": "\ud83e\uddec"
+        },
+        "word_count": 43,
+        "timestamp": "2026-03-27T14:21:56.818822",
+        "submission_id": 1
+      },
+      {
+        "answer": "The mitochondria is considered the powerhouse of the cell as it generates most of the chemical energy needed to power the cell's biochemical reactions in the form of adenosine triphosphate (ATP). I find the complexities of cellular respiration absolutely fascinating and sometimes overwhelming.",
+        "emotion": "surprise",
+        "confidence": 0.67,
+        "quality_metrics": {
+          "length_score": 50,
+          "complexity_score": 90,
+          "vocabulary_score": 94.88,
+          "readability_score": 50,
+          "structure_score": 25,
+          "overall_score": 67.47,
+          "quality_level": "average",
+          "word_count": 43,
+          "sentence_count": 2
+        },
+        "topic": {
+          "primary_topic": "Biology",
+          "confidence": 0.5,
+          "all_topics": {
+            "Biology": 0.5,
+            "Physics": 0.25,
+            "Chemistry": 0.25
+          },
+          "emoji": "\ud83e\uddec"
+        },
+        "word_count": 43,
+        "timestamp": "2026-03-27T14:27:41.429335",
+        "submission_id": 2
+      }
+    ],
+    "statistics": {
+      "total_submissions": 2,
+      "average_quality": 67.47,
+      "most_common_emotion": "surprise",
+      "improvement_trend": "declining"
+    }
+  },
+  "148efb7a-2db6-458f-8958-ce7f4ec1e706": {
+    "submissions": [
+      {
+        "answer": "i am very happy\r\n",
+        "emotion": "joy",
+        "confidence": 0.99,
+        "quality_metrics": {
+          "length_score": 20,
+          "complexity_score": 40,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 0,
+          "overall_score": 49.5,
+          "quality_level": "below_average",
+          "word_count": 4,
+          "sentence_count": 1
+        },
+        "topic": {
+          "primary_topic": "General",
+          "confidence": 0.5,
+          "all_topics": {
+            "General": 0.5
+          },
+          "emoji": "\ud83d\udcd6"
+        },
+        "word_count": 4,
+        "timestamp": "2026-03-27T14:50:16.347696",
+        "submission_id": 1
+      },
+      {
+        "answer": "i am very sad\r\n\r\n",
+        "emotion": "sadness",
+        "confidence": 0.99,
+        "quality_metrics": {
+          "length_score": 20,
+          "complexity_score": 40,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 0,
+          "overall_score": 49.5,
+          "quality_level": "below_average",
+          "word_count": 4,
+          "sentence_count": 1
+        },
+        "topic": {
+          "primary_topic": "General",
+          "confidence": 0.5,
+          "all_topics": {
+            "General": 0.5
+          },
+          "emoji": "\ud83d\udcd6"
+        },
+        "word_count": 4,
+        "timestamp": "2026-03-27T14:51:37.147954",
+        "submission_id": 2
+      },
+      {
+        "answer": "i am very sad\r\n\r\n",
+        "emotion": "sadness",
+        "confidence": 0.99,
+        "quality_metrics": {
+          "length_score": 20,
+          "complexity_score": 40,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 0,
+          "overall_score": 49.5,
+          "quality_level": "below_average",
+          "word_count": 4,
+          "sentence_count": 1
+        },
+        "topic": {
+          "primary_topic": "General",
+          "confidence": 0.5,
+          "all_topics": {
+            "General": 0.5
+          },
+          "emoji": "\ud83d\udcd6"
+        },
+        "word_count": 4,
+        "timestamp": "2026-03-27T14:52:28.122970",
+        "submission_id": 3
+      }
+    ],
+    "statistics": {
+      "total_submissions": 3,
+      "average_quality": 49.5,
+      "most_common_emotion": "sadness",
+      "improvement_trend": "declining"
+    }
+  },
+  "36f33459-516f-427f-97ed-791070461f23": {
+    "submissions": [
+      {
+        "answer": "i am very happy today\r\n",
+        "emotion": "joy",
+        "confidence": 0.99,
+        "quality_metrics": {
+          "length_score": 20,
+          "complexity_score": 40,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 0,
+          "overall_score": 49.5,
+          "quality_level": "below_average",
+          "word_count": 5,
+          "sentence_count": 1
+        },
+        "topic": {
+          "primary_topic": "General",
+          "confidence": 0.5,
+          "all_topics": {
+            "General": 0.5
+          },
+          "emoji": "\ud83d\udcd6"
+        },
+        "word_count": 5,
+        "timestamp": "2026-03-27T14:53:45.304822",
+        "submission_id": 1
+      }
+    ],
+    "statistics": {
+      "total_submissions": 1,
+      "average_quality": 49.5,
+      "most_common_emotion": "joy",
+      "improvement_trend": []
+    }
+  },
+  "f629c750-c65d-4368-b0e7-93e733d36484": {
+    "submissions": [
+      {
+        "answer": "i am very happy\r\n",
+        "emotion": "joy",
+        "confidence": 0.99,
+        "quality_metrics": {
+          "length_score": 20,
+          "complexity_score": 40,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 0,
+          "overall_score": 49.5,
+          "quality_level": "below_average",
+          "word_count": 4,
+          "sentence_count": 1
+        },
+        "topic": {
+          "primary_topic": "General",
+          "confidence": 0.5,
+          "all_topics": {
+            "General": 0.5
+          },
+          "emoji": "\ud83d\udcd6"
+        },
+        "word_count": 4,
+        "timestamp": "2026-03-27T15:05:27.930535",
+        "submission_id": 1
+      }
+    ],
+    "statistics": {
+      "total_submissions": 1,
+      "average_quality": 49.5,
+      "most_common_emotion": "joy",
+      "improvement_trend": []
+    }
+  },
+  "7cb99105-485d-44aa-80ad-7e4fd0aa453a": {
+    "submissions": [
+      {
+        "answer": "i am very sad today\r\n",
+        "emotion": "sadness",
+        "confidence": 0.99,
+        "quality_metrics": {
+          "length_score": 20,
+          "complexity_score": 40,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 0,
+          "overall_score": 49.5,
+          "quality_level": "below_average",
+          "word_count": 5,
+          "sentence_count": 1
+        },
+        "topic": {
+          "primary_topic": "General",
+          "confidence": 0.5,
+          "all_topics": {
+            "General": 0.5
+          },
+          "emoji": "\ud83d\udcd6"
+        },
+        "word_count": 5,
+        "timestamp": "2026-03-27T15:11:17.237791",
+        "submission_id": 1
+      }
+    ],
+    "statistics": {
+      "total_submissions": 1,
+      "average_quality": 49.5,
+      "most_common_emotion": "sadness",
+      "improvement_trend": []
+    }
+  },
+  "9537dd08-01c3-4682-8073-7e834014c9cc": {
+    "submissions": [
+      {
+        "answer": "I am very happy",
+        "emotion": "joy",
+        "confidence": 0.99,
+        "quality_metrics": {
+          "length_score": 20,
+          "complexity_score": 40,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 25,
+          "overall_score": 53.25,
+          "quality_level": "below_average",
+          "word_count": 4,
+          "sentence_count": 1
+        },
+        "topic": {
+          "primary_topic": "General",
+          "confidence": 0.5,
+          "all_topics": {
+            "General": 0.5
+          },
+          "emoji": "\ud83d\udcd6"
+        },
+        "word_count": 4,
+        "timestamp": "2026-03-27T15:21:23.862296",
+        "submission_id": 1
+      }
+    ],
+    "statistics": {
+      "total_submissions": 1,
+      "average_quality": 53.25,
+      "most_common_emotion": "joy",
+      "improvement_trend": []
+    }
+  },
+  "185fd934-dd03-4ccc-b2b3-54e31c1bfe6a": {
+    "submissions": [
+      {
+        "answer": "i am very happy today \r\n",
+        "emotion": "joy",
+        "confidence": 0.99,
+        "quality_metrics": {
+          "length_score": 20,
+          "complexity_score": 40,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 0,
+          "overall_score": 49.5,
+          "quality_level": "below_average",
+          "word_count": 5,
+          "sentence_count": 1
+        },
+        "topic": {
+          "primary_topic": "General",
+          "confidence": 0.5,
+          "all_topics": {
+            "General": 0.5
+          },
+          "emoji": "\ud83d\udcd6"
+        },
+        "word_count": 5,
+        "timestamp": "2026-04-01T10:59:30.553873",
+        "submission_id": 1
+      }
+    ],
+    "statistics": {
+      "total_submissions": 1,
+      "average_quality": 49.5,
+      "most_common_emotion": "joy",
+      "improvement_trend": []
+    }
+  },
+  "ef29a224-ecef-4643-b586-5cf17b045082": {
+    "submissions": [
+      {
+        "answer": "i am very haappy\r\n",
+        "emotion": "joy",
+        "confidence": 0.89,
+        "quality_metrics": {
+          "length_score": 20,
+          "complexity_score": 40,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 0,
+          "overall_score": 49.5,
+          "quality_level": "below_average",
+          "word_count": 4,
+          "sentence_count": 1
+        },
+        "topic": {
+          "primary_topic": "General",
+          "confidence": 0.5,
+          "all_topics": {
+            "General": 0.5
+          },
+          "emoji": "\ud83d\udcd6"
+        },
+        "word_count": 4,
+        "timestamp": "2026-04-01T11:01:10.235845",
+        "submission_id": 1
+      },
+      {
+        "answer": "i got placed in a MNC company ",
+        "emotion": "joy",
+        "confidence": 0.63,
+        "quality_metrics": {
+          "length_score": 20,
+          "complexity_score": 40,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 0,
+          "overall_score": 49.5,
+          "quality_level": "below_average",
+          "word_count": 7,
+          "sentence_count": 1
+        },
+        "topic": {
+          "primary_topic": "General",
+          "confidence": 0.5,
+          "all_topics": {
+            "General": 0.5
+          },
+          "emoji": "\ud83d\udcd6"
+        },
+        "word_count": 7,
+        "timestamp": "2026-04-01T11:01:30.980101",
+        "submission_id": 2
+      }
+    ],
+    "statistics": {
+      "total_submissions": 2,
+      "average_quality": 49.5,
+      "most_common_emotion": "joy",
+      "improvement_trend": "declining"
+    }
+  },
+  "9ee7f3f4-5da6-480b-bd96-4b74a59cb150": {
+    "submissions": [
+      {
+        "answer": "I am confused about this topic",
+        "emotion": "fear",
+        "confidence": 0.65,
+        "quality_metrics": {
+          "length_score": 20,
+          "complexity_score": 40,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 25,
+          "overall_score": 53.25,
+          "quality_level": "below_average",
+          "word_count": 6,
+          "sentence_count": 1
+        },
+        "topic": {
+          "primary_topic": "General",
+          "confidence": 0.5,
+          "all_topics": {
+            "General": 0.5
+          },
+          "emoji": "\ud83d\udcd6"
+        },
+        "word_count": 6,
+        "timestamp": "2026-04-16T10:01:20.342314",
+        "submission_id": 1
+      },
+      {
+        "answer": "I really enjoyed implementing Dijkstra\u2019s algorithm today. At first it was confusing, but after tracing each step with a priority queue, I understood how shortest paths are computed efficiently.\r\n",
+        "emotion": "joy",
+        "confidence": 0.98,
+        "quality_metrics": {
+          "length_score": 50,
+          "complexity_score": 70,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 50,
+          "overall_score": 70.5,
+          "quality_level": "average",
+          "word_count": 29,
+          "sentence_count": 2
+        },
+        "topic": {
+          "primary_topic": "Computer Science",
+          "confidence": 1.0,
+          "all_topics": {
+            "Computer Science": 1.0
+          },
+          "emoji": "\ud83d\udcbb"
+        },
+        "word_count": 29,
+        "timestamp": "2026-04-16T10:11:37.435126",
+        "submission_id": 2
+      },
+      {
+        "answer": "Photosynthesis converts light energy into chemical energy through light-dependent and light-independent reactions. Chlorophyll absorbs sunlight, and ATP and NADPH are used in the Calvin cycle to produce glucose.",
+        "emotion": "neutral",
+        "confidence": 0.84,
+        "quality_metrics": {
+          "length_score": 50,
+          "complexity_score": 70,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 50,
+          "overall_score": 70.5,
+          "quality_level": "average",
+          "word_count": 28,
+          "sentence_count": 2
+        },
+        "topic": {
+          "primary_topic": "Physics",
+          "confidence": 0.333,
+          "all_topics": {
+            "Physics": 0.333,
+            "Chemistry": 0.333,
+            "Biology": 0.333
+          },
+          "emoji": "\u269b\ufe0f"
+        },
+        "word_count": 28,
+        "timestamp": "2026-04-16T10:19:14.111054",
+        "submission_id": 3
+      },
+      {
+        "answer": "Photosynthesis converts light energy into chemical energy through light-dependent and light-independent reactions. Chlorophyll absorbs sunlight, and ATP and NADPH are used in the Calvin cycle to produce glucose.",
+        "emotion": "neutral",
+        "confidence": 0.84,
+        "quality_metrics": {
+          "length_score": 50,
+          "complexity_score": 70,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 50,
+          "overall_score": 70.5,
+          "quality_level": "average",
+          "word_count": 28,
+          "sentence_count": 2
+        },
+        "topic": {
+          "primary_topic": "Physics",
+          "confidence": 0.333,
+          "all_topics": {
+            "Physics": 0.333,
+            "Chemistry": 0.333,
+            "Biology": 0.333
+          },
+          "emoji": "\u269b\ufe0f"
+        },
+        "word_count": 28,
+        "timestamp": "2026-04-16T10:27:29.087159",
+        "submission_id": 4
+      },
+      {
+        "answer": "Photosynthesis converts light energy into chemical energy through light-dependent and light-independent reactions. Chlorophyll absorbs sunlight, and ATP and NADPH are used in the Calvin cycle to produce glucose.",
+        "emotion": "neutral",
+        "confidence": 0.84,
+        "quality_metrics": {
+          "length_score": 50,
+          "complexity_score": 70,
+          "vocabulary_score": 100,
+          "readability_score": 70,
+          "structure_score": 50,
+          "overall_score": 70.5,
+          "quality_level": "average",
+          "word_count": 28,
+          "sentence_count": 2
+        },
+        "topic": {
+          "primary_topic": "Physics",
+          "confidence": 0.333,
+          "all_topics": {
+            "Physics": 0.333,
+            "Chemistry": 0.333,
+            "Biology": 0.333
+          },
+          "emoji": "\u269b\ufe0f"
+        },
+        "word_count": 28,
+        "timestamp": "2026-04-16T10:33:20.257332",
+        "submission_id": 5
+      }
+    ],
+    "statistics": {
+      "total_submissions": 5,
+      "average_quality": 67.05,
+      "most_common_emotion": "neutral",
+      "improvement_trend": "improving"
+    }
+  }
+}
